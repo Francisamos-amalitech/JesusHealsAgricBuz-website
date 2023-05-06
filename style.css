@@ -7,7 +7,9 @@
     font-family:'Quicksand', sans-serif;
 }
 
-
+html{
+    scroll-behavior:smooth;
+}
 
 /* ----VARIBALES ------- */
 
@@ -17,8 +19,137 @@
     --light-green:#0dbc2a;
     --black-color:#000;
     --white-color:#fff;
+    --light-gray:#d2cece;
     
 }
 
 
 /* ---- NAVBAR SECTION---------- */
+
+
+
+
+.welcome-section{
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(3, 57, 15, 0.7),rgba(7, 144, 32, 0.7)),url('images/bg-image.jpg');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:3% 8%;
+    height:80px;
+}
+
+nav img{
+    width:90px;
+    cursor:pointer;
+}
+
+
+nav .active{
+    font-weight:900;
+}
+
+nav li{
+   display:inline-block;
+   margin:10px 30px;
+}
+
+
+nav li a{
+    color:var(--green-color);
+    text-decoration:none;
+    font-size:18px;
+    font-weight:600;
+}
+
+
+nav li:after{
+    content:'';
+    width:0;
+    height:4px;
+    background:var(--green-color);
+    border-radius:6px;
+    display:block;
+    margin:4px auto;
+    transition:.3s;
+}
+
+
+nav li:hover:after{
+    width:100%;
+}
+
+
+
+.order{
+    background:var(--black-color);
+    padding:15px 40px;
+    border-radius:6px;
+    color:var(--white-color);
+    text-decoration:none;
+    font-size:17px;
+    font-weight:700;
+    transition:background .3s;
+}
+
+.order:hover{
+    background:transparent;
+    border:2px solid var(--black-color);
+    color:var(--black-color)
+}
+
+
+
+
+.welcome-info{
+    width:100%;
+    padding:2% 8%;
+    position:absolute;
+    top:20%;
+}
+
+
+.welcome-info h3{
+    color:var(--white-color);
+    font-size:20px;
+    margin-bottom:15px;
+    font-weight:600;
+}
+
+.welcome-info h1{
+    font-size:60px;
+    color:var(--white-color);
+    font-weight: 900;
+}
+
+.welcome-info P{
+    font-size:20px;
+    color:var(--light-gray);
+    margin-top:25px;
+    line-height:28px;
+    font-weight:600;
+
+}
+
+.welcome-info-btn{
+    padding:15px 30px;
+    background:var(--orange-color);
+    color:var(--white-color);
+    text-decoration:none;
+    display:inline-block;
+    margin-top:25px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:900;
+}
+/* ----END OF NAVBAR SECTION */
+
+
