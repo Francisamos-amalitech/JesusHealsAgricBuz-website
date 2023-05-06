@@ -82,7 +82,7 @@ nav{
     height:80px;
 }
 
-nav img{
+nav .logo{
     width:90px;
     cursor:pointer;
 }
@@ -250,3 +250,47 @@ section{
 
 
 /* ----- END OF ABOUT STYLING---------- */
+
+
+
+
+
+
+
+/* ---- RESPONSIVE SECTION ------- */
+
+@media(max-width:600px){
+
+    nav .logo{
+        width:70px;
+    }
+
+    nav ul{
+        display:none;
+    }
+
+
+    .welcome-section{
+        height:60vh;
+    }
+
+
+    .welcome-info h3{
+        font-size:14px;
+    }
+
+    .welcome-info{
+        position:absolute;
+        top:10%;
+    }
+
+
+    .welcome-info h1{
+        font-size:40px;
+    }
+    
+    .welcome-info p{
+        font-size:12px;
+    }
+
+}
