@@ -26,6 +26,37 @@ html{
     
 }
 
+.top{
+    width:50px;
+    height:50px;
+    background:var(--orange-color);
+    position:fixed;
+    border-radius:50%;
+    z-index:1;
+    bottom:5%;
+    right:5%;
+    cursor: pointer;
+    animation:move 3s linear infinite;
+}
+@keyframes move {
+    0%{
+        transform:translateY(-10px);
+    }
+    50%{
+        transform:translateY(10px);
+    }
+     100%{
+        transform:translateY(-10px);
+     }
+}
+
+.top i{
+    color:var(--white-color);
+    font-size:20px;
+    padding:12px;
+    margin:auto 5px;
+    line-height:25px;
+} 
 
 /* ---- NAVBAR SECTION---------- */
 
@@ -169,6 +200,9 @@ section{
     gap:40px;
 }
 
+.about-info{
+    position: relative;
+}
 
 .about-info img{
     width:100%;
@@ -204,6 +238,13 @@ section{
     font-weight:700;
     display:inline-block;
     border-radius:12px;
+    transition:background .3s;
+}
+
+.read-more:hover{
+    background:transparent;
+    border:2px solid var(--light-green);
+    color:var(--light-green);
 }
 
 
